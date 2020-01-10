@@ -97,15 +97,15 @@ void mergeSort(vector<int>& Arr)
 	merge(leftArr, rightArr, Arr);
 }
 
-int main()
-{
-	vector<int> arr = { 2,6,4,9,3,5,1,8,7,10,2 };
-
-	mergeSort(arr);
-
-	for (size_t i = 0; i < arr.size(); ++i)
-	{
-		cout << arr[i] << "\t";
-	}
-	return 0;
-}
+//int main()
+//{
+//	vector<int> arr = { 2,6,4,9,3,5,1,8,7,10,2 };
+//
+//	mergeSort(arr);
+//
+//	for (size_t i = 0; i < arr.size(); ++i)
+//	{
+//		cout << arr[i] << "\t";
+//	}
+//	return 0;
+//}
