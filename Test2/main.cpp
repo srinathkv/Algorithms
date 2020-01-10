@@ -42,7 +42,7 @@ int maxCollection()
 
 void merge(vector<int> left, vector<int> right, vector<int>& Arr)
 {
-	int i = 0, j = 0, k = 0;
+	size_t i = 0, j = 0, k = 0;
 	while (i < left.size() && j < right.size())
 	{
 		if (left[i] <= right[j])
@@ -88,23 +88,22 @@ void mergeSort(vector<int>& Arr)
 	{
 		leftArr.push_back(Arr[i]);
 	}
-	for (int i = midPoint; i < Arr.size(); ++i)
+	for (size_t i = midPoint; i < Arr.size(); ++i)
 	{
 		rightArr.push_back(Arr[i]);
 	}
 	mergeSort(leftArr);
 	mergeSort(rightArr);
-	//vector<int> sortedArr;
 	merge(leftArr, rightArr, Arr);
 }
 
 int main()
 {
-	vector<int> arr = { 2,6,4,9,3,5,1,8 };
+	vector<int> arr = { 2,6,4,9,3,5,1,8,7,10,2 };
 
 	mergeSort(arr);
 
-	for (int i = 0; i < arr.size(); ++i)
+	for (size_t i = 0; i < arr.size(); ++i)
 	{
 		cout << arr[i] << "\t";
 	}
