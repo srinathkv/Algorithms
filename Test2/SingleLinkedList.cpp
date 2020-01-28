@@ -52,12 +52,10 @@ public:
 		{
 			if (curr->next)
 			{
-				next = curr->next;	
-				
+				next = curr->next;					
 			}
 			curr->next = prev;
-			if (prev == head)
-				prev->next = NULL;
+	
 			prev = curr;
 			curr = next;
 			next = NULL;			
@@ -85,6 +83,8 @@ int main()
 	list.pushAtEnd(30);
 	list.pushAtEnd(40);
 	list.pushAtEnd(50);
+	list.pushAtEnd(60);
+	list.pushAtEnd(70);
 	list.print();
 
 	list.reverse();
