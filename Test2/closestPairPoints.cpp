@@ -103,12 +103,10 @@ float closestPair(Point* a, int size)
 	return closestRec(a, size);
 }
 
-int main()
-{
-	Point a[] = { {2, 3}, {12, 30}, {40, 50}, {5, 1}, {12, 10}, {3, 4} };
-
-	
-
-	cout << " Min : " << closestPair(a, sizeof(a) / sizeof(a[0]));
-	return 0;
-}
+//int main()
+//{
+//	Point a[] = { {2, 3}, {12, 30}, {40, 50}, {5, 1}, {12, 10}, {3, 4} };
+//
+//	cout << " Min : " << closestPair(a, sizeof(a) / sizeof(a[0]));
+//	return 0;
+//}
